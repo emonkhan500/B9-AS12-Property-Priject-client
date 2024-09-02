@@ -4,14 +4,29 @@ import { Link, NavLink } from 'react-router-dom';
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import logo from '../../assets/download-C1bLvnDk.jpg'
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthPorvider";
 import Swal from "sweetalert2";
 
 
 
 const Nav = () => {
+  // const [theme,setTheme]=useState('light')
+  // useEffect(()=>{
+  //   localStorage.setItem('theme',theme)
+  //   const localTheme= localStorage.getItem('theme')
+  //   document.querySelector('html').setAttribute('data-theme',localTheme)
+  // },[theme])
 
+  // const handleToggle= e=>{
+  //  if(e.target.checked){
+  //   setTheme('dark')
+  //  }
+  //  else{
+  //   setTheme('light')
+  //  }
+  // }
+  // console.log(theme)
   const { logOut, user } = useContext(AuthContext);
 
 
@@ -130,9 +145,10 @@ const Nav = () => {
 </div>
     }
       </div>
-      <div className="ml-4">
+      {/* <div className="ml-4">
         <label className="cursor-pointer grid place-items-center">
           <input
+            onChange={handleToggle}
             type="checkbox"
             className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
           />
@@ -166,7 +182,7 @@ const Nav = () => {
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </label>
-      </div>
+      </div> */}
       <Tooltip id="my-tooltip" />
     </div>
     );
