@@ -104,7 +104,7 @@ const Nav = () => {
         <div className="text-white flex gap-2">
           <img className='h-9 w-9 rounded-lg' src={logo} alt="" />
           <p className="font-bold ">
-    <span className='text-white'><span className='text-3xl text-orange-600'>P</span ><span className='text-lg'>ROPERTY</span></span> <span className='text-3xl text-orange-600'>Z</span><span className='text-lg'>ONE</span> <br/>
+    <span className='text-white'><span className='text-lg md:text-3xl text-orange-600'>P</span ><span className='text-lg'>ROPERTY</span></span> <span className='text-3xl text-orange-600'>Z</span><span className='text-lg'>ONE</span> <br/>
     </p>
          
         </div>
