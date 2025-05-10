@@ -20,6 +20,7 @@ const Signup = () => {
     const email = e.target.email.value;
     const pass = e.target.pass.value;
     const photo = e.target.photo.value;
+   
 
     // console.log(name, email, pass, photo);
     setRegisterError(' ')
