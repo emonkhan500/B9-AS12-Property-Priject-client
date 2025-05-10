@@ -74,7 +74,7 @@ const Nav = () => {
       );
 
     return (
-        <div className="max-w-screen-xl navbar fixed z-50 bg-[#15151580] container px-4 mx-auto  shadow-sm">
+        <div  className="px-3 md:px-16 lg:px-28 navbar fixed z-50 bg-[#15151580] shadow-sm w-full">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -112,7 +112,7 @@ const Nav = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
-      <div className="">
+      <div className="navbar-end">
         <div
           data-tooltip-id="my-tooltip"
           data-tooltip-content={user?.displayName || "No User"}

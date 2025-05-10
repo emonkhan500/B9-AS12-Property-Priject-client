@@ -21,7 +21,7 @@ const ShowAdvertise = () => {
     return (
         <div 
         
-        className='bg-gray-200 py-10 rounded-lg'>
+        className=' py-10 rounded-lg'>
             <div className='text-center py-10 '> <h1 className='text-3xl font-bold text-orange-400 animate__animated animate__backInDown'>Our Best Property is Here!!</h1></div>
             <div className='mt-7 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-4'>
                 {

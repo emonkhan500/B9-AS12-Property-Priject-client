@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthPorvider>
     <QueryClientProvider client={queryClient}>
-    <div className='max-w-screen-xl mx-auto'>
+    <div className='bg-[#fff7ed]  mx-auto'>
    <RouterProvider router={router} />
    <ToastContainer />
    </div>
