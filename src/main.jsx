@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthPorvider>
     <QueryClientProvider client={queryClient}>
-    <div className='bg-[#fff7ed]  mx-auto'>
+    <div className='bg-white  mx-auto'>
    <RouterProvider router={router} />
    <ToastContainer />
    </div>
@@ -29,3 +29,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </AuthPorvider>
   </React.StrictMode>,
 )
+// bg-[#F0FDF4]

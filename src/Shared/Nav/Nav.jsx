@@ -1,20 +1,14 @@
-
 import { FaCartShopping } from "react-icons/fa6";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import logo from '../../assets/download-C1bLvnDk.jpg'
+import logo from "../../assets/download-C1bLvnDk.jpg";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthPorvider";
 import Swal from "sweetalert2";
 
-
-
 const Nav = () => {
-
   const { logOut, user } = useContext(AuthContext);
-  
-
 
   const handleLogout = () => {
     logOut()
@@ -24,63 +18,67 @@ const Nav = () => {
       .catch((error) => console.log(error));
   };
 
-    const navLinks = (
-        <>
-          <div className=" text-green-500 sm:flex md:gap-3 items-center mx-auto justify-center">
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-400 border p-2 rounded-md border-yellow-400 font-mono"
-                    : "text-xl"
-                }
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/allproperty"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-400 border p-2 rounded-md border-yellow-400 font-mono"
-                    : "text-xl"
-                }
-              >
-               ALL PROPERTIES
-              </NavLink>
-            </li>
-    
-            <li>
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-400 border p-2 rounded-md border-yellow-400 font-mono"
-                    : "text-xl"
-                }
-              >
-                 <FaCartShopping  className="text-3xl"/>
-                DASHBOARD
-              </NavLink>
-            </li>
-            
-            
-    
-          
-          </div>
-        </>
-      );
+  const navLinks = (
+    <>
+      <div className=" text-white sm:flex md:gap-3 items-center mx-auto justify-center font-mono">
+       
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `p-2 rounded-md text-xl transition-colors duration-600 ${
+                isActive
+                  ? "border border-[#3BB77E] text-[#3BB77E]"
+                  : "text-white hover:text-[#3BB77E]"
+              }`
+            }
+          >
+            Home
+          </NavLink>
+       
+        <NavLink
+          to="/allproperty"
+          className={({ isActive }) =>
+            `p-2 rounded-md text-xl transition-colors duration-600 ${
+              isActive
+                ? "border border-[#3BB77E] text-[#3BB77E]"
+                : "text-white hover:text-[#3BB77E]"
+            }`
+          }
+        >
+          ALL PROPERTIES
+        </NavLink>
 
-    return (
-        <div  className="px-3 md:px-16 lg:px-28 navbar fixed z-50 bg-[#15151580] shadow-sm w-full">
+        
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              `p-2 rounded-md text-xl transition-colors duration-600 flex justify-center gap-3 ${
+                isActive
+                  ? "border border-[#3BB77E] text-[#3BB77E]"
+                  : "text-white hover:text-[#3BB77E]"
+              }`
+            }
+          >
+            <FaCartShopping className="text-3xl" />
+            DASHBOARD
+          </NavLink>
+        
+      </div>
+    </>
+  );
+
+  return (
+    <div className=" md:px-16 lg:px-28 navbar fixed z-50 bg-[#10090980] shadow-sm w-full">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="text-orange-400 mr-4 lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-9 w-9  "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -102,44 +100,62 @@ const Nav = () => {
         </div>
 
         <div className="text-white flex gap-2">
-          <img className='h-9 w-9 rounded-lg' src={logo} alt="" />
+          <img className="h-9 w-9 rounded-lg" src={logo} alt="" />
+          <div className="hidden md:flex">
           <p className="font-bold ">
-    <span className='text-white'><span className='text-lg md:text-3xl text-orange-600'>P</span ><span className='text-lg'>ROPERTY</span></span> <span className='text-3xl text-orange-600'>Z</span><span className='text-lg'>ONE</span> <br/>
-    </p>
-         
+            <span className="text-white">
+              <span className="text-lg md:text-3xl text-green-600">P</span>
+              <span className="text-lg">ROPERTY</span>
+            </span>{" "}
+            <span className="text-lg md:text-3xl text-green-600">Z</span>
+            <span className="text-lg">ONE</span> <br />
+          </p>
+          </div>
         </div>
       </div>
 
-      
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden py-5 lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         <div
           data-tooltip-id="my-tooltip"
           data-tooltip-content={user?.displayName || "No User"}
-          className="w-10 mr-2 rounded-full"
+          
+          className=" w-12 h-12 flex justify-center mr-2 rounded-full"
         >
-          <img className="rounded-2xl" alt="" src={user?.photoURL} />
+          <img className="rounded-full" alt="" src={user?.photoURL} />
         </div>
-        {
-      user?<>
-      
-<Link> <button onClick={handleLogout} className="btn border-green-600 text-green-500">Sign Out</button></Link>
-</> :
-<div className="flex gap-3">
-<Link to='/login'> <button className="btn  bg-gray-500 border-green-600 text-white">Login</button></Link>
-<Link to='/signup'> <button className="btn bg-gray-500 border-green-600 text-white">Register</button></Link>
-</div>
-    }
+        {user ? (
+          <>
+            <Link>
+              {" "}
+              <button
+                onClick={handleLogout}
+                className="px-2 py-2 rounded font-bold bg-[#3BB77E]  text-white"
+              >
+                Sign Out
+              </button>
+            </Link>
+          </>
+        ) : (
+          <div className="flex gap-3">
+            <Link to="/login">
+              {" "}
+              <button className="px-2 py-2 rounded font-bold  bg-[#3BB77E]  text-white">Login</button>
+            </Link>
+            <Link to="/signup">
+              {" "}
+              <button className="px-2 py-2 rounded font-bold bg-[#3BB77E]  text-white">Register</button>
+            </Link>
+          </div>
+        )}
       </div>
-      <div className="ml-4">
-       
-      </div>
-      
+      <div className="ml-4"></div>
+
       <Tooltip id="my-tooltip" />
     </div>
-    );
+  );
 };
 
 export default Nav;
