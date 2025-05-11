@@ -129,7 +129,7 @@ const Signup = () => {
                 name="photo"
                 placeholder="Photo"
                 className="input input-bordered"
-                required
+                
               />
             </div>
             <div className="form-control">
