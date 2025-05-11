@@ -125,20 +125,24 @@ const Nav = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-      <div
+      
+{user &&(
+  <div
   data-tooltip-id="my-tooltip"
   data-tooltip-content={user?.displayName || "No User"}
   className="w-12 h-12 flex justify-center items-center mr-2 rounded-full"
 >
-  <img
+<img
     className="w-full h-full rounded-full object-cover"
     alt="User"
     src={
-      user?.photoURL ||
-      "https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
+      user.photoURL
+        ? user.photoURL
+        : "https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
     }
   />
 </div>
+)}
         {user ? (
           <>
             <Link>

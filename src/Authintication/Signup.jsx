@@ -92,8 +92,8 @@ const Signup = () => {
     }
 
     return (
-        <div className="hero pt-20 min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse shadow-xl py-36 px-28 border-black border-t-2">
+        <div className="hero  min-h-screen bg-[#F0FDF4]">
+      <div className="hero-content flex-col lg:flex-row-reverse shadow-xl py-12 lg:py-36 lg:px-28 border-black border-t-2">
         <div className="card shrink-0 w-full max-w-sm ">
           <form onSubmit={handleSignUp} className="card-body">
             <div className="form-control">
@@ -152,17 +152,17 @@ const Signup = () => {
             </div>
           </form>
           <p className="text-[#D1A054] text-center mt-">
-            Already registered?{" "}
-            <Link to="/login">
-              <span className="text-xl"> Go to log in</span>
+            Have Account?{" "}<Link to="/login">
+              <span className="text-xl"> Sign In</span>
             </Link>
+          <div className='flex mt-3 gap-4 justify-center items-center mb-4'>
+        <h1 className='text-[#D1A054] text-lg'>Sign In with Google</h1>
+        <img onClick={handleGoogle} src={google} alt="" />
+        
+      </div>
+            
           </p>
 
-          <div className="flex mt-3 gap-4 justify-center">
-            
-            <button onClick={handleGoogle}><img  src={google} alt="" /></button>
-            
-          </div>
         </div>
         <div className="text-center lg:text-left">
           <img  src={loginImg} alt="" />
