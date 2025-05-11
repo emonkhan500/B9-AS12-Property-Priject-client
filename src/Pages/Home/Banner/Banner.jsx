@@ -22,14 +22,14 @@ const Banner = () => {
   {/* Centered Content */}
   <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
     <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  px-0 lg:px-4 xl:px-28">
       Discover the space that matches your dreams and fits your lifestyle !
       </h2>
       <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
       From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -52,14 +52,14 @@ const Banner = () => {
   {/* Centered Content */}
   <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
     <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  px-0 lg:px-4 xl:px-28">
       Find not just a property, but a place where your story begins !
       </h2>
       <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
       We help you find more than a house — a true home. Whether you're starting fresh or upgrading your lifestyle, discover a space that reflects your personality, supports your goals, and becomes part of your journey.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8]mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -84,14 +84,14 @@ const Banner = () => {
   {/* Centered Content */}
   <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
     <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  px-0 lg:px-4 xl:px-28">
       Connecting you with the right property, with trust at every step !
       </h2>
       <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
       Whether you’re searching for your next home or your next opportunity, our curated properties offer beauty, functionality, and lasting worth. We help you make informed decisions for a better future, one property at a time.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -116,14 +116,14 @@ const Banner = () => {
   {/* Centered Content */}
   <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
     <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  px-0 lg:px-4 xl:px-28">
       Your ideal lifestyle starts with the perfect location — find it here !
       </h2>
       <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
       Location shapes your lifestyle. From energetic cityscapes to peaceful communities, we connect you with homes in places that inspire, support, and grow with you. Your dream destination is closer than you think — let’s find it together.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -148,14 +148,14 @@ const Banner = () => {
   {/* Centered Content */}
   <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
     <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  px-0 lg:px-4 xl:px-28">
       Step into a life of comfort, elegance, and timeless property value !
       </h2>
       <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
       Luxury is more than looks — it’s about how a space makes you feel. Our properties combine elegant design, modern comfort, and long-term value to give you the home experience you truly deserve.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
       </Link>
     </div>
   </div>

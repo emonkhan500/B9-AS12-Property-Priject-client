@@ -5,6 +5,9 @@ import { AuthContext } from '../Provider/AuthPorvider';
 import google from '../assets/google 1.png'
 import loginImg from '../assets/authentication2.png'
 import Swal from 'sweetalert2';
+import { FaGoogle } from 'react-icons/fa6';
+import Lottie from 'lottie-react';
+import signin from '../../public/Animation - 1746973850327.json';
 
 const Signup = () => {
 
@@ -92,8 +95,11 @@ const Signup = () => {
     }
 
     return (
-        <div className="hero  min-h-screen bg-[#F0FDF4]">
-      <div className="hero-content flex-col lg:flex-row-reverse shadow-xl py-12 lg:py-36 lg:px-28 border-black border-t-2">
+        <div className="hero  min-h-screen ">
+      <div className="mt-10 hero-content flex-col lg:flex-row-reverse shadow-xl py-5 lg:py-12 lg:px-28 ">
+      <div className="">
+    <Lottie animationData={signin} className="w-full  h-full md:h-[400px] lg:h-full" />
+    </div>
         <div className="card shrink-0 w-full max-w-sm ">
           <form onSubmit={handleSignUp} className="card-body">
             <div className="form-control">
@@ -148,25 +154,23 @@ const Signup = () => {
          registerError &&  <p className='text-red-600 text-lg'>{registerError}</p>
      }
             <div className="form-control mt-6">
-              <button className="btn  bg-[#D1A054]">Sign Up</button>
+              <button className="btn text-white  bg-gradient-to-r from-[#4394e1] to-[#72e4cd]">Sign Up</button>
             </div>
           </form>
-          <p className="text-[#D1A054] text-center mt-">
+          <p className="text-[#3B9DF8] text-center mt-">
             Have Account?{" "}<Link to="/login">
               <span className="text-xl"> Sign In</span>
             </Link>
-          <div className='flex mt-3 gap-4 justify-center items-center mb-4'>
-        <h1 className='text-[#D1A054] text-lg'>Sign In with Google</h1>
-        <img onClick={handleGoogle} src={google} alt="" />
+            <div className='flex mt-3 gap-4 justify-center items-center mb-4'>
+        <h1 className='text-[#3B9DF8] text-lg'>Sign In with Google</h1>
+        <FaGoogle  className='text-[#3B9DF8] text-xl' onClick={handleGoogle}/>
         
       </div>
             
           </p>
 
         </div>
-        <div className="text-center lg:text-left">
-          <img  src={loginImg} alt="" />
-        </div>
+        
       </div>
     </div>
     );

@@ -26,8 +26,8 @@ const Nav = () => {
           className={({ isActive }) =>
             `p-2 rounded-md text-xl transition-colors duration-600 ${
               isActive
-                ? "border border-[#3BB77E] text-[#3BB77E]"
-                : "text-white hover:text-[#3BB77E]"
+                ? "border border-[#3B9DF8] text-[#3B9DF8]"
+                : "text-white hover:text-[#3B9DF8]"
             }`
           }
         >
@@ -39,8 +39,8 @@ const Nav = () => {
           className={({ isActive }) =>
             `p-2 rounded-md text-xl transition-colors duration-600 ${
               isActive
-                ? "border border-[#3BB77E] text-[#3BB77E]"
-                : "text-white hover:text-[#3BB77E]"
+                ? "border border-[#3B9DF8] text-[#3B9DF8]"
+                : "text-white hover:text-[#3B9DF8]"
             }`
           }
         >
@@ -52,8 +52,8 @@ const Nav = () => {
           className={({ isActive }) =>
             `p-2 rounded-md text-xl transition-colors duration-600 flex justify-center gap-3 ${
               isActive
-                ? "border border-[#3BB77E] text-[#3BB77E]"
-                : "text-white hover:text-[#3BB77E]"
+                ? "border border-[#3B9DF8] text-[#3B9DF8]"
+                : "text-white hover:text-[#3B9DF8]"
             }`
           }
         >
@@ -71,7 +71,7 @@ const Nav = () => {
         <div
             tabIndex={0}
             role="button"
-            className="text-green-600 mr-4 lg:hidden"
+            className="text-[#3B9DF8] mr-4 lg:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,10 +111,10 @@ const Nav = () => {
           <div className="hidden md:flex">
             <p className="font-bold ">
               <span className="text-white">
-                <span className="text-lg md:text-3xl text-green-600">P</span>
+                <span className="text-lg md:text-3xl text-[#3B9DF8]">P</span>
                 <span className="text-lg">ROPERTY</span>
               </span>{" "}
-              <span className="text-lg md:text-3xl text-green-600">Z</span>
+              <span className="text-lg md:text-3xl text-[#3B9DF8]">Z</span>
               <span className="text-lg">ONE</span> <br />
             </p>
           </div>
@@ -149,7 +149,7 @@ const Nav = () => {
               {" "}
               <button
                 onClick={handleLogout}
-                className="px-2 py-2 rounded font-bold bg-[#3BB77E]  text-white"
+                className="px-2 py-2 rounded font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white"
               >
                 Sign Out
               </button>
@@ -159,13 +159,13 @@ const Nav = () => {
           <div className="flex gap-3">
             <Link to="/login">
               {" "}
-              <button className="px-2 py-2 rounded font-bold  bg-[#3BB77E]  text-white">
+              <button className="px-2 py-2 rounded font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white">
                 Login
               </button>
             </Link>
             <Link to="/signup">
               {" "}
-              <button className="px-2 py-2 rounded font-bold bg-[#3BB77E]  text-white">
+              <button className="px-2 py-2 rounded font-bold bg-gradient-to-r from-[#3BE8C4] to-[#3B9DF8]  text-white">
                 Register
               </button>
             </Link>
