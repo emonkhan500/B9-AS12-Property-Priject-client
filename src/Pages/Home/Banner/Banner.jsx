@@ -8,52 +8,61 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div>
-      <div className="carousel w-full h-[800px]">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img src={img1} className="w-full rounded-xl" />
-          <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-            <div className="text-white space-y-7 pl-12 ">
-              <h2 className="text-5xl font-bold text-gray-300">
-                Affordable Price For Your Dream Property
-              </h2>
-              <p className="text-gray-300">
-                There are many variations of property are available here, Choose
-                your dream property here!!!
-              </p>
-              <div>
-                <Link to="/allproperty">
-                  <button className="btn  mr-5">Discover More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide5" className="btn btn-circle mr-5">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
+      <div className="carousel w-full h-[380px] md:h-[500px] lg:h-[580px] xl:h-[650px]">
+        {/* skide 1 */}
+      <div id="slide1" className="carousel-item relative w-full ">
+ 
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${img1})` }}
+  ></div>
+ 
+  <div className="absolute inset-0 bg-black bg-opacity-45 "></div>
+
+  {/* Centered Content */}
+  <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
+    <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      Discover the space that matches your dreams and fits your lifestyle !
+      </h2>
+      <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
+      From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
+      </p>
+      <Link to="/allproperty">
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+      </Link>
+    </div>
+  </div>
+
+  {/* Navigation Buttons */}
+  <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-2 md:right-5 bottom-0">
+    <a href="#slide5" className="btn btn-circle mr-5">❮</a>
+    <a href="#slide2" className="btn btn-circle">❯</a>
+  </div>
+</div>
+{/* slide2 */}
         <div id="slide2" className="carousel-item relative w-full">
-          <img src={img2} className="w-full rounded-xl" />
-          <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-            <div className="text-white space-y-7 pl-12 w-1/2">
-              <h2 className="text-5xl font-bold text-gray-300">
-                Affordable Price For Your Dream Property
-              </h2>
-              <p className="text-gray-300">
-                There are many variations of property are available here, Choose
-                your dream property here!!!
-              </p>
-              <div>
-                <Link to="/allproperty">
-                  <button className="btn  mr-5">Discover More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${img2})` }}
+  ></div>
+ 
+  <div className="absolute inset-0 bg-black bg-opacity-45 "></div>
+
+  {/* Centered Content */}
+  <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
+    <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      Discover the space that matches your dreams and fits your lifestyle !
+      </h2>
+      <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
+      From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
+      </p>
+      <Link to="/allproperty">
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+      </Link>
+    </div>
+  </div>
           <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
             <a href="#slide1" className="btn btn-circle mr-5">
               ❮
@@ -63,24 +72,29 @@ const Banner = () => {
             </a>
           </div>
         </div>
+        {/* slide 3 */}
         <div id="slide3" className="carousel-item relative w-full">
-          <img src={img3} className="w-full rounded-xl" />
-          <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-            <div className="text-white space-y-7 pl-12 w-1/2">
-              <h2 className="text-5xl font-bold text-gray-300">
-                Affordable Price For Your Dream Property
-              </h2>
-              <p className="text-gray-300">
-                There are many variations of property are available here, Choose
-                your dream property here!!!
-              </p>
-              <div>
-                <Link to="/allproperty">
-                  <button className="btn  mr-5">Discover More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${img3})` }}
+  ></div>
+ 
+  <div className="absolute inset-0 bg-black bg-opacity-45 "></div>
+
+  {/* Centered Content */}
+  <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
+    <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      Discover the space that matches your dreams and fits your lifestyle !
+      </h2>
+      <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
+      From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
+      </p>
+      <Link to="/allproperty">
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+      </Link>
+    </div>
+  </div>
           <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
             <a href="#slide2" className="btn btn-circle mr-5">
               ❮
@@ -90,24 +104,29 @@ const Banner = () => {
             </a>
           </div>
         </div>
+        {/* slide 4 */}
         <div id="slide4" className="carousel-item relative w-full">
-          <img src={img4} className="w-full rounded-xl" />
-          <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-            <div className="text-white space-y-7 pl-12 w-1/2">
-              <h2 className="text-5xl font-bold text-gray-300">
-                Affordable Price For Your Dream Property
-              </h2>
-              <p className="text-gray-300">
-                There are many variations of property are available here, Choose
-                your dream property here!!!
-              </p>
-              <div>
-                <Link to="/allproperty">
-                  <button className="btn  mr-5">Discover More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${img4})` }}
+  ></div>
+ 
+  <div className="absolute inset-0 bg-black bg-opacity-45 "></div>
+
+  {/* Centered Content */}
+  <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
+    <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      Discover the space that matches your dreams and fits your lifestyle !
+      </h2>
+      <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
+      From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
+      </p>
+      <Link to="/allproperty">
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+      </Link>
+    </div>
+  </div>
           <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
             <a href="#slide3" className="btn btn-circle mr-5">
               ❮
@@ -117,24 +136,29 @@ const Banner = () => {
             </a>
           </div>
         </div>
+        {/* slide 5 */}
         <div id="slide5" className="carousel-item relative w-full">
-          <img src={img5} className="w-full rounded-xl" />
-          <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-            <div className="text-white space-y-7 pl-12 w-1/2">
-              <h2 className="text-5xl font-bold text-gray-300">
-                Affordable Price For Your Dream Property
-              </h2>
-              <p className="text-gray-300">
-                There are many variations of property are available here, Choose
-                your dream property here!!!
-              </p>
-              <div>
-                <Link to="/allproperty">
-                  <button className="btn  mr-5">Discover More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${img5})` }}
+  ></div>
+ 
+  <div className="absolute inset-0 bg-black bg-opacity-45 "></div>
+
+  {/* Centered Content */}
+  <div className="absolute inset-0 flex items-center justify-start px-12 text-center">
+    <div className="text-white space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-7 w-full">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-[#39e439] to-[#66f899] bg-clip-text  px-0 lg:px-4 xl:px-28">
+      Discover the space that matches your dreams and fits your lifestyle !
+      </h2>
+      <p className="text-gray-50  md:pt-3  xl:pt-4 text-xs md:text-sm lg:text-base xl:text-lg md:px-20 lg:px-28 xl:px-72 font-thin hidden md:flex">
+      From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
+      </p>
+      <Link to="/allproperty">
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3BB77E] mt-6">Discover More</button>
+      </Link>
+    </div>
+  </div>
           <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
             <a href="#slide4" className="btn btn-circle mr-5">
               ❮
