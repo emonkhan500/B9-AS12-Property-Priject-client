@@ -8,7 +8,7 @@ import { BiLogoMicrosoft } from "react-icons/bi";
 const Footer = () => {
     return (
         <div className='w-full   '>
-            <footer className="bg-black bg-opacity-10 shadow-md  lg:mt-7 w-full p-3 md:p-4 relative">
+            <footer className="bg-black bg-opacity-10 shadow-md   w-full p-3 md:p-4 relative">
 
 <div
     className="w-full flex items-center justify-center pt-3 flex-col gap-4 pb-16">
