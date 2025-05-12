@@ -7,7 +7,7 @@ import loginImg from '../assets/authentication2.png'
 import Swal from 'sweetalert2';
 import { FaGoogle } from 'react-icons/fa6';
 import Lottie from 'lottie-react';
-import signin from '../../public/Animation - 1746973850327.json';
+import signin from '../../public/signin.json';
 
 const Signup = () => {
 

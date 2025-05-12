@@ -29,7 +29,7 @@ const Banner = () => {
       From cozy family homes to modern apartments and luxury villas, we bring you handpicked properties that align with your vision, comfort, and way of life. Begin your search today — your perfect space is just a click away.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold  bg-gradient-to-r from-[#4394e1] to-[#72e4cd] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -59,7 +59,7 @@ const Banner = () => {
       We help you find more than a house — a true home. Whether you're starting fresh or upgrading your lifestyle, discover a space that reflects your personality, supports your goals, and becomes part of your journey.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8]mt-6">Discover More</button>
+      <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold  bg-gradient-to-r from-[#4394e1] to-[#72e4cd] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -91,7 +91,7 @@ const Banner = () => {
       Whether you’re searching for your next home or your next opportunity, our curated properties offer beauty, functionality, and lasting worth. We help you make informed decisions for a better future, one property at a time.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold  bg-gradient-to-r from-[#4394e1] to-[#72e4cd] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -123,7 +123,7 @@ const Banner = () => {
       Location shapes your lifestyle. From energetic cityscapes to peaceful communities, we connect you with homes in places that inspire, support, and grow with you. Your dream destination is closer than you think — let’s find it together.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold  bg-gradient-to-r from-[#4394e1] to-[#72e4cd] mt-6">Discover More</button>
       </Link>
     </div>
   </div>
@@ -155,7 +155,7 @@ const Banner = () => {
       Luxury is more than looks — it’s about how a space makes you feel. Our properties combine elegant design, modern comfort, and long-term value to give you the home experience you truly deserve.
       </p>
       <Link to="/allproperty">
-        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold rounded-lg bg-[#3B9DF8] mt-6">Discover More</button>
+        <button className="px-3 md:px-5 py-2 md:py-3 md:font-semibold  bg-gradient-to-r from-[#4394e1] to-[#72e4cd] mt-6">Discover More</button>
       </Link>
     </div>
   </div>

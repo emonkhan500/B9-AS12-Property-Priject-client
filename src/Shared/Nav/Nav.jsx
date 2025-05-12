@@ -138,7 +138,7 @@ const Nav = () => {
     src={
       user.photoURL
         ? user.photoURL
-        : "https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
+        : "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop"
     }
   />
 </div>
@@ -149,7 +149,7 @@ const Nav = () => {
               {" "}
               <button
                 onClick={handleLogout}
-                className="px-2 py-2 rounded font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white"
+                className="px-2 py-2  font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white"
               >
                 Sign Out
               </button>
@@ -159,13 +159,13 @@ const Nav = () => {
           <div className="flex gap-3">
             <Link to="/login">
               {" "}
-              <button className="px-2 py-2 rounded font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white">
+              <button className="px-2 py-2 font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white">
                 Login
               </button>
             </Link>
             <Link to="/signup">
               {" "}
-              <button className="px-2 py-2 rounded font-bold bg-gradient-to-r from-[#3BE8C4] to-[#3B9DF8]  text-white">
+              <button className="px-2 py-2 font-bold bg-gradient-to-r from-[#3BE8C4] to-[#3B9DF8]  text-white">
                 Register
               </button>
             </Link>

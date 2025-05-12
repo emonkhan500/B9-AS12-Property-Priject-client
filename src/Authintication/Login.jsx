@@ -12,7 +12,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGoogle } from 'react-icons/fa6';
 import Lottie from 'lottie-react';
-import signin from '../../public/Animation - 1746973850327.json';
+import signin from '../../public/signin.json';
 
 const Login = () => {
     const{login,googleLogin}=useContext(AuthContext)
