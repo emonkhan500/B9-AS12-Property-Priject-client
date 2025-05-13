@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import LatestReview from '../Latest Review/LatestReview';
+
 import ShowAdvertise from '../../../Components/ShowAdvertise/ShowAdvertise';
 import Contact from '../../../Components/Contact/Contact';
 import Newsletter from '../../../Components/NewsLetter/Newsletter';
@@ -13,7 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <ShowAdvertise></ShowAdvertise>
             {/* <Contact></Contact> */}
-            {/* <LatestReview></LatestReview> */}
+           
             <NewLatestReview></NewLatestReview>
             <Faq></Faq>
             <Newsletter></Newsletter>
