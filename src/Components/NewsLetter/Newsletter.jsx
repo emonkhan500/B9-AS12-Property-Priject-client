@@ -21,7 +21,7 @@ const Newsletter = () => {
         setEmail(e.target.value);
       }
   return (
-    <div className=" bg-slate-100 shadow-lg px-2 xl:px-28 flex flex-col md:flex-row justify-center items-center  gap-2 md:gap-5 ">
+    <div className=" bg-slate-50 shadow-lg px-2 xl:px-28 flex flex-col md:flex-row justify-center items-center  gap-2 md:gap-5 ">
       <div className="md:w-1/2   md:relative">
         {/* line */}
       <div className="hidden md:flex md:absolute right-5 top-0 h-64 2xl:h-96 w-[4px] md:my-5 lg:my-[40px] xl:my-14 2xl:my-36 bg-gradient-to-r from-[#4394e1] to-[#72e4cd]"></div>

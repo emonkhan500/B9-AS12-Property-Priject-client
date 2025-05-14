@@ -1,30 +1,14 @@
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import useAxiosPublic from "../../../Components/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 
-import { Typewriter } from "react-simple-typewriter";
-
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import "./css/style.css";
-
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import "../Latest Review/css/style.css";
-
+import { FaQuoteLeft } from "react-icons/fa";
+import React from "react";
 
 const NewLatestReview = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
   const axiosPublic = useAxiosPublic();
 
   const { refetch, data: reviews = [] } = useQuery({
@@ -35,60 +19,77 @@ const NewLatestReview = () => {
     },
   });
   console.log(reviews);
-
- 
-
   return (
-    <div className=" py-11 bg-[#ede7e7]">
-      <h1 className="text-center  text-4xl font-bold text-orange-500 ">
-        Users{" "}
-        <Typewriter
-          words={["Latest Reviews is here!"]}
-          loop={5}
-          cursor
-          cursorStyle="_"
-          typeSpeed={90}
-          deleteSpeed={50}
-          delaySpeed={1300}
-        ></Typewriter>
-      </h1>
+    <div className="pt-16 pb-14">
+      <div className="text-center mb-6 md:mb-14">
+        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text dark:text-white pb-3">
+          Latest Review Given By Users
+        </h3>
+        <p className=" text-gray-600 dark:text-white ">
+          Honest reviews, trusted experiences shared from our community.
+        </p>
+      </div>
       <Swiper
-  onSwiper={setSwiperRef}
-  slidesPerView={2}
-  centeredSlides={true}
-  spaceBetween={30}
-  initialSlide={1} // Show Slide 2 initially
-  pagination={{
-    type: 'fraction',
-  }}
-  navigation={true}
-  modules={[Pagination, Navigation]}
-  className="mySwiper"
->
-{
-  reviews.map(review => <SwiperSlide>
-    <div  className='mb-10'>
-  <div  className="avatar">
-  <div className="mask mask-squircle w-32 ">
+        slidesPerView={3}
+        centeredSlides={true}
+        spaceBetween={30}
+        initialSlide={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]} // Removed Navigation, added Autoplay
+        className="mySwiper"
+      >
+        {reviews.map((review) => (
+          <SwiperSlide>
+            <div className="w-full h-[450px]   mt-8 md:mt-0 px-6 pt-3 bg-white  rounded-lg ">
+              <FaQuoteLeft className=" absolute top-2 left-[1%] text-[1.3rem] text-[#727272]" />
+              <div className="">
+                <img
+                  src={review.photo}
+                  alt="demo/image"
+                  className="h-[230px] w-full mt-4"
+                />
+                {/* content div */}
+                <div>
+                  <p className="text-[#424242] text-center  mt-5">
+                    {review.reviewDes}
+                  </p>
 
-    <img  src={review.userImg} alt="" /></div>
-  </div>
-    <div>
-    <h4 className="font-bold mt-4"><span className='text-orange-500 mr-2'>Name:</span>{review.userName}</h4>
-    <div className='flex gap-7'>
-    <h4 className="font-bold mt-2"><span className='text-orange-500 mr-2'>Reviewed For:</span>{review.propertyName}</h4>
-    <h4 className="font-bold mt-2"><span className='text-orange-500 mr-2'>Time:</span>{review.time}</h4>
-    </div>
-    <h1 className='mt-2 text-sm'>{review.reviewDes}</h1>
-    </div>
-    </div>
-    </SwiperSlide>)
-}
-
-</Swiper>
+                  <div className="flex items-center mt-5 justify-between ">
+                    <div>
+                      <div className="p-[2px] rounded-full bg-gradient-to-r from-[#3B9DF8] to-[#00C6FF] inline-block">
+                        <img
+                          src={review.userImg}
+                          alt=""
+                          className="w-16 h-16 bg-white rounded-full "
+                        />
+                      </div>
+                      <h2 className="text-[1.2rem] font-[600]">
+                        {review.userName}
+                      </h2>
+                    </div>
+                    <div>
+                      <p className="text-[1rem] text-[#727272]">
+                        <span className="">Reviewed For:</span>
+                        {review.propertyName}
+                      </p>
+                      <p className="text-[1rem] text-[#727272]">
+                        <span className="">Time:</span>
+                        {review.time}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <FaQuoteLeft className="absolute bottom-2 right-[5%] rotate-[180deg] text-[1.3rem] text-[#727272]" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
 
 export default NewLatestReview;
-
