@@ -14,8 +14,8 @@ const Home = () => {
             <ShowAdvertise></ShowAdvertise>
             {/* <Contact></Contact> */}
            
-            <NewLatestReview></NewLatestReview>
             <Faq></Faq>
+            <NewLatestReview></NewLatestReview>
             <Newsletter></Newsletter>
         </div>
     );
