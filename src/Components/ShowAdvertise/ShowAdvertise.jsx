@@ -31,7 +31,7 @@ const ShowAdvertise = () => {
         Experience Luxury Living — Where Comfort Meets Prime Location
         </p>
       </div>
-            <div className='mt-7 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-4'>
+            <div className='mt-7 pb-8   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 px-5 2xl:px-32 gap-4'>
                 {
                     advertiseProperties?.map(property=><ShowUiAdvertisement property={property}></ShowUiAdvertisement>)
                 }

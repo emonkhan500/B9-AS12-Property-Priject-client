@@ -49,8 +49,8 @@ const AllProperty = () => {
 
     return (
         <div className=''>
-            <div className='text-center pt-24'>
-                <h1 className='text-3xl font-bold text-orange-400 mt-5'>
+            <div className='text-center pt-16 md:pt-24 lg:pt-44'>
+                <h1 className='text-3xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text mt-5'>
                     Here is  <Typewriter words={['ALL Property Verified By Admin !!']}
                       loop={5}
                       cursor
@@ -61,32 +61,32 @@ const AllProperty = () => {
                     ></Typewriter> 
                 </h1>
             </div>
-            <div className="flex items-center justify-center gap-14">
-                <div>
+            <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-5 md:gap-14">
+                <div className=''>
                     <input
-                        className="border-2 lg:px-6 py-3 mt-5 rounded-lg border-red-800"
+                        className="shadow-md outline-none bg-gray-100 px-4  lg:px-6 py-3 mt-3 md:mt-5 rounded-s-lg "
                         placeholder="Search here"
                         type="text"
                         value={searchValue}
                         onChange={(e) => setSearchValue(e.target.value)}
                     />
-                    <button className="btn btn-success" onClick={handleSearch}>
+                    <button className="shadow-md border px-2 py-3 rounded-e-lg  font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white" onClick={handleSearch}>
                         Search
                     </button>
                 </div>
                 <div>
                     <select
-                        className="border-2 lg:px-6 py-3 mt-5 rounded-lg text-green-500 border-green-700"
+                        className="shadow-md md:mt-5  px-4 py-3  rounded font-bold  bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white"
                         value={sortOrder}
                         onChange= {(e) => setSortOrder(e.target.value)}
                     >
                         
-                        <option className='text-green-600' value="asc">Ascending</option>
-                        <option className='text-green-600' value="desc">Descending</option>
+                        <option className='text-blue-600' value="asc">Ascending</option>
+                        <option className='text-blue-600' value="desc">Descending</option>
                     </select>
                 </div>
             </div>
-            <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+            <div className='mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {
                     property?.map(property => (
                         <ShowAllProperty key={property._id} property={property} />

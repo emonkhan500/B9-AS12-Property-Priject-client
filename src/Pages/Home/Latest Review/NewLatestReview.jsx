@@ -20,7 +20,7 @@ const NewLatestReview = () => {
   });
   console.log(reviews);
   return (
-    <div className="pt-16 px-1 md:px-3">
+    <div className="pt-16 px-1 md:px-3 2xl:px-20">
       <div className="text-center mb-6 md:mb-14">
         <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text dark:text-white pb-3">
           Latest Review Given By Users
@@ -52,11 +52,11 @@ const NewLatestReview = () => {
     },
   }}
   modules={[Autoplay]}
-  className="mySwiper"
+  className="mySwiper "
 >
   {reviews.map((review) => (
     <SwiperSlide key={review._id}>
-      <div className="w-full h-[330px] md:h-[330px] lg:h-[450px] mt-8 md:mt-0 px-2 pt-2 bg-gradient-to-r from-[#3B9DF8]/30 to-[#00C6FF]/30 rounded-lg flex flex-col justify-between relative">
+      <div className="w-full  h-[330px] md:h-[330px] lg:h-[450px] mt-8 md:mt-0 px-2   pt-2 bg-gradient-to-r from-[#3B9DF8]/30 to-[#00C6FF]/30 rounded-lg flex flex-col justify-between relative">
         {/* Top Quote */}
        
 
@@ -65,7 +65,7 @@ const NewLatestReview = () => {
           <img
             src={review.photo}
             alt="demo/image"
-            className=" h-[130px] md:h-[120px] lg:h-[200px] w-full object-cover mt-2 rounded-md"
+            className=" h-[130px] md:h-[120px] lg:h-[200px] 2xl:h-[230px] w-full object-cover mt-2 rounded-md"
           />
           <p className="text-[#424242] text-center mt-3 lg:mt-7 mb-3 overflow-y-auto max-h-[120px] px-2">
             {review.reviewDes}
