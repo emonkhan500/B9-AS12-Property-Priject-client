@@ -20,7 +20,7 @@ const NewLatestReview = () => {
   });
   console.log(reviews);
   return (
-    <div className="pt-16 pb-14">
+    <div className="pt-16 pb-10">
       <div className="text-center mb-6 md:mb-14">
         <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text dark:text-white pb-3">
           Latest Review Given By Users
@@ -42,50 +42,51 @@ const NewLatestReview = () => {
         className="mySwiper"
       >
         {reviews.map((review) => (
-          <SwiperSlide>
-            <div className="w-full h-[450px]   mt-8 md:mt-0 px-6 pt-3 bg-white  rounded-lg ">
-              <FaQuoteLeft className=" absolute top-2 left-[1%] text-[1.3rem] text-[#727272]" />
-              <div className="">
-                <img
-                  src={review.photo}
-                  alt="demo/image"
-                  className="h-[230px] w-full mt-4"
-                />
-                {/* content div */}
-                <div>
-                  <p className="text-[#424242] text-center  mt-5">
-                    {review.reviewDes}
-                  </p>
-
-                  <div className="flex items-center mt-5 justify-between ">
-                    <div>
-                      <div className="p-[2px] rounded-full bg-gradient-to-r from-[#3B9DF8] to-[#00C6FF] inline-block">
-                        <img
-                          src={review.userImg}
-                          alt=""
-                          className="w-16 h-16 bg-white rounded-full "
-                        />
-                      </div>
-                      <h2 className="text-[1.2rem] font-[600]">
-                        {review.userName}
-                      </h2>
-                    </div>
-                    <div>
-                      <p className="text-[1rem] text-[#727272]">
-                        <span className="">Reviewed For:</span>
-                        {review.propertyName}
-                      </p>
-                      <p className="text-[1rem] text-[#727272]">
-                        <span className="">Time:</span>
-                        {review.time}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <FaQuoteLeft className="absolute bottom-2 right-[5%] rotate-[180deg] text-[1.3rem] text-[#727272]" />
+          <SwiperSlide key={review._id}>
+          <div className="w-full h-[450px] mt-8 md:mt-0 px-6 pt-3 bg-gradient-to-r from-[#3B9DF8]/30 to-[#00C6FF]/30 rounded-lg flex flex-col justify-between">
+            {/* Top Quote */}
+            <FaQuoteLeft className="absolute top-2 left-[1%] text-[1.3rem] text-[#727272]" />
+        
+            {/* Top Section (Image + Description) */}
+            <div className="flex flex-col flex-grow overflow-hidden">
+              <img
+                src={review.photo}
+                alt="demo/image"
+                className="h-[200px] w-full object-cover mt-4 rounded-md"
+              />
+        
+              <p className="text-[#424242] text-center mt-4 overflow-y-auto max-h-[100px] px-2">
+                {review.reviewDes}
+              </p>
             </div>
-          </SwiperSlide>
+        
+            {/* Bottom Section (User Info) */}
+            <div className="flex items-center justify-between mt-5 pt-2 pb-2">
+              <div className="pb-2 ">
+                <div className="p-[2px] rounded-full bg-gradient-to-r from-[#3B9DF8] to-[#00C6FF] inline-block">
+                  <img
+                    src={review.userImg}
+                    alt=""
+                    className="w-14 h-14 bg-white rounded-full"
+                  />
+                </div>
+                <h2 className="text-[1.2rem] font-[600]">{review.userName}</h2>
+              </div>
+              <div className="pb-4">
+                <p className="text-[1rem] text-[#383737] text-base">
+                  <span>Property:</span> {review.propertyName}
+                </p>
+                <p className="text-[1rem] text-[#383737]">
+                  <span>Time:</span> {review.time}
+                </p>
+              </div>
+            </div>
+        
+            {/* Bottom Quote */}
+            <FaQuoteLeft className="absolute bottom-2 right-[5%] rotate-180 text-[1.3rem] text-[#727272]" />
+          </div>
+        </SwiperSlide>
+        
         ))}
       </Swiper>
     </div>
