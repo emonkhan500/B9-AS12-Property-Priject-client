@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div>
-      <div className="carousel w-full h-[380px] md:h-[500px] lg:h-[580px] xl:h-[650px]">
+      <div className="carousel w-full h-[380px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
         {/* skide 1 */}
       <div id="slide1" className="carousel-item relative w-full ">
  

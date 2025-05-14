@@ -42,7 +42,7 @@ const ShowUiAdvertisement = ({property}) => {
 		
 	</div>
 	<img src={photo} alt="" className="property-photo object-cover object-center w-full h-72 dark:bg-gray-500" />
-	<div className='flex justify-between lg:px-9 mt-4 '>
+	<div className='flex justify-between lg:px-4 mt-4 '>
         <h1 className='text-xl  font-semibold'> <span className='text-[#3B9DF8] text-base mr-1'>Title:</span>  {propertyName}</h1>
         <h1 className='flex items-center justify-center gap-1 text-xl font-semibold' ><IoLocationSharp />{location}</h1>
     </div>
