@@ -107,7 +107,7 @@ const handleMakeAgent =user=>{
   }
 
     return (
-        <div className='bg-[#cababa] h-[100vh]'>
+        <div className='bg-[#cababa] min-h-[100vh]'>
           <div className='text-center '>
 <p className='text-[#230ee2] pt-20'>---Welcome Admin---</p>
 <hr className='h-4 mt-3 w-60 mx-auto' />
