@@ -65,10 +65,12 @@ console.log(reviews)
 
 
   return (
-    <div className="bg-yellow-50 w-[95%] md:w-[85%] mx-auto px-1 md:px-10 py-4 rounded-xl">
-      <Link to="/allproperty">
-        <div className="pt-16 mt-10 text-[#331a15]">
-          <div className="flex justify-start items-center gap-2 bg-yellow-200 max-w-[9rem] hover:cursor-pointer text-orange-800 rounded p-2">
+    <div className="bg-yellow-50  mx-auto px-1 md:px-10 py-4 rounded-xl">
+      
+        <div className="pt-16 pl-[90px] mt-10 text-[#331a15]  z-10">
+          <div className=" gap-2 bg-yellow-200 max-w-[9rem] hover:cursor-pointer text-orange-800 rounded p-2">
+          <Link className='flex justify-center items-center gap-4' to="/allproperty">
+            <div>
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -87,15 +89,18 @@ console.log(reviews)
                 d="M244 400 100 256l144-144M120 256h292"
               ></path>
             </svg>
-            <h2 className="font-exo pb-1 font-semibold text-xl inline">
+            </div>
+            
+            <h2 className=" pb-1 font-semibold text-xl inline">
              Back
             </h2>
+            </Link>
           </div>
         </div>
-      </Link>
+    
 
-      <div className="mt-10 md:w-[80%] mx-auto bg-gradient-to-br to-orange-300 via-yellow-200 from-yellow-300 px-1 md:px-3 pt-10 md:pt-16 rounded-2xl flex flex-col justify-center items-center md:gap-[10%]">
-        {photo && <img className="w-full rounded-md" src={photo} alt='' />}
+      <div className="-mt-14 md:w-[80%] mx-auto bg-gradient-to-br to-orange-300 via-yellow-200 from-yellow-300 px-1 md:px-3 pt-10 md:pt-16 rounded-2xl flex flex-col justify-center items-center md:gap-[10%]">
+        {photo && <img className="w-full h-[600px] rounded-md" src={photo} alt='' />}
         <div className='flex mt-6 gap-36 lg:gap-48 '>
           <div className="flex items-center justify-between p-3 bg-green-400 py-4 px-10">
             <div className="flex gap-4 items-center space-x-2">
