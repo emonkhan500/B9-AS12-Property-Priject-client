@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 
 const Faq = () => {
     return (
-        <div className='p-5 md:p-1 lg:p-7 xl:p-10 mt-10 w-full lg:max-w-[1300px] mx-auto'>
+        <div className='p-5 md:p-1 lg:p-7 xl:p-10 mt-10 w-full lg:max-w-[1400px] mx-auto'>
             <div className="text-center mb-6 md:mb-14">
         <p className="text-lg mb-2 text-gray-800">
           Your Frequently Ask Questions
@@ -93,7 +93,7 @@ const Faq = () => {
         <div className="w-full md:w-1/2 lg:w-2/5">
           <div data-aos="zoom-in-up" className="flex relative">
             
-            <Lottie animationData={faq} className="w-full shadow" />
+            <Lottie animationData={faq} className="w-full " />
           </div>
         </div>
       </div>

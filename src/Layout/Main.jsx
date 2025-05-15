@@ -7,7 +7,9 @@ const Main = () => {
     return (
         <div className=' mx-auto'>
             <Nav></Nav>
+            <div className='min-h-screen'>
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );

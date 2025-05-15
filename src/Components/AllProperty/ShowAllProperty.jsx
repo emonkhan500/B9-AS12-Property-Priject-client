@@ -52,7 +52,7 @@ const ShowAllProperty = ({property}) => {
         <h1 className='text-lg md:text-xl  font-semibold'> <span className='text-[#3B9DF8] text-base mr-1'>Price:</span> ${minPrice}-{maxPrice} </h1>
         <h1 className='flex items-center justify-center gap-1 text-lg md:text-xl text-orange-500 font-semibold mb-4' > <MdVerifiedUser />{ isVerified===false?<><RxLapTimer /> Pending</> :isVerified=== true?'Verified':'Rejected'}</h1>
     </div>
-   <Link to={`/details/${_id}`}> <button className=' px-36 py-3 shadow-md w-full  flex items-center bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white gap-2'><TbListDetails /> Details</button></Link>
+   <Link to={`/details/${_id}`}> <button className='  py-3 shadow-md w-full justify-center flex items-center bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white gap-2'><TbListDetails /> Details</button></Link>
 </div> 
         </div>
     );
