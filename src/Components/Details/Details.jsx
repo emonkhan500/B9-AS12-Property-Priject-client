@@ -65,10 +65,10 @@ console.log(reviews)
 
 
   return (
-    <div className="bg-yellow-50  mx-auto px-1 md:px-10 py-4 rounded-xl">
+    <div className="lg:pt-16 px-1 md:px-24  mx-auto   py-4 rounded-xl">
       
-        <div className="pt-16 pl-[90px] mt-10 text-[#331a15]  z-10">
-          <div className=" gap-2 bg-yellow-200 max-w-[9rem] hover:cursor-pointer text-orange-800 rounded p-2">
+        <div className="flex justify-between lg:justify-start gap-0 lg:gap-10  pt-12 md:pt-16  mt-10 text-[#331a15]  z-10">
+          <div className=" ml-1 md:ml-4 gap-2 bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4]  text-white max-w-[9rem] hover:cursor-pointer  rounded p-2">
           <Link className='flex justify-center items-center gap-4' to="/allproperty">
             <div>
             <svg
@@ -96,13 +96,16 @@ console.log(reviews)
             </h2>
             </Link>
           </div>
+         
+         <button onClick={handleWish} className='mr-3 px-2 py-2 rounded bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] font-bold text-white'>Add to WishList</button>
+         
         </div>
     
 
-      <div className="-mt-14 md:w-[80%] mx-auto bg-gradient-to-br to-orange-300 via-yellow-200 from-yellow-300 px-1 md:px-3 pt-10 md:pt-16 rounded-2xl flex flex-col justify-center items-center md:gap-[10%]">
-        {photo && <img className="w-full h-[600px] rounded-md" src={photo} alt='' />}
+      <div className="-mt-14 md:-mt-14 mx-auto bg-gradient-to-r from-[#3B9DF8]/30 to-[#00C6FF]/30 px-1 md:px-3 pt-10 md:pt-16 rounded-2xl flex flex-col justify-center items-center md:gap-[10%]">
+        {photo && <img className="w-full h-auto md:h-[600px] rounded-md pt-6" src={photo} alt='' />}
         <div className='flex mt-6 gap-36 lg:gap-48 '>
-          <div className="flex items-center justify-between p-3 bg-green-400 py-4 px-10">
+          {/* <div className="flex items-center justify-between p-3 bg-green-400 py-4 px-10">
             <div className="flex gap-4 items-center space-x-2">
               <img src={agentImg || "https://source.unsplash.com/random/100x100/?5"} alt="" className="object-cover object-center w-14 h-w-14 rounded-full shadow-sm dark:bg-gray-500 dark:border-gray-300" />
               <div className="-space-y-1">
@@ -110,19 +113,19 @@ console.log(reviews)
                 <span className="inline-block text-xs leading-none text-blue-600 dark:text-gray-600">-Agent-</span>
               </div>
             </div>
-          </div>
-          <button onClick={handleWish} className='btn btn-warning'>Add to WishList</button>
+          </div> */}
+          
         </div>
         
-        <div className='flex gap-36 lg:gap-52 px-9 mt-4'>
+        <div className='flex flex-col justify-between md:flex-row md:gap-36 lg:gap-52 mt-4'>
           <h1 className='text-xl font-semibold'><span className='text-violet-800 text-base mr-1'>Title:</span>{propertyName}</h1>
           <h1 className='flex items-center justify-center gap-1 text-xl font-semibold'><IoLocationSharp />{location}</h1>
         </div>
         
-        <div className='flex gap-20 mt-4 lg:gap-44 lg:px-4'>
+        {/* <div className='flex gap-20 mt-4 lg:gap-44 lg:px-4'>
           <h1 className='text-xl font-semibold'><span className='text-violet-800 text-base mr-1'>Price:</span>${minPrice}-{maxPrice}</h1>
           <h1 className='flex items-center justify-center gap-1 text-xl text-orange-500 font-semibold mb-4'><MdVerifiedUser />{isVerified === false ? <><RxLapTimer /> Pending</> : isVerified === true ? 'Verified' : 'Rejected'}</h1>
-        </div>
+        </div> */}
 
         <h1 className='text-violet-800 text-base mr-1'>Description <span className='text-lg font-semibold text-gray-800'>{des}</span></h1>
         <div>
