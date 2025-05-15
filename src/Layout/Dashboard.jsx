@@ -11,20 +11,22 @@ import { NavLink, Outlet } from "react-router-dom";
 import useAdmin from "../Components/useAdmin";
 import useAgent from "../Components/useAgent";
 
+
 const Dashboard = () => {
     const [isAdmin]=useAdmin()
     const[isAgent]=useAgent()
     // console.log(isAdmin)
     // const isAgent = false
     // const isAdmin = true
+   
     return (
-        <div className="flex flex-col md:flex-row   ">
+        <div className="flex flex-col lg:flex-row  bg-[#8ba80941] ">
         <div className=" w-auto lg:w-64 h-full min-h-screen  pt-20">
           <ul className="menu space-y-2 mx-5">
             {isAdmin ? 
               <>
               <li>
-      <NavLink className='text-lg' to='/dashboard/adminprofile'><IoMdHome /> Admin Profile</NavLink>
+      <NavLink className='text-lg ' to='/dashboard/adminprofile'><IoMdHome /> Admin Profile</NavLink>
       </li>
       <li>
       <NavLink className='text-lg' to='/dashboard/managepropertybyadmin'><HiOutlineHomeModern /> Manage Properties</NavLink>
@@ -105,7 +107,12 @@ const Dashboard = () => {
         </div>
   
         <div className="flex-1 ">
+          <div>
+          <h1>Welcome to Dashboard</h1>
+          </div>
+          <div>
           <Outlet></Outlet>
+          </div>
         </div>
       </div>
     );

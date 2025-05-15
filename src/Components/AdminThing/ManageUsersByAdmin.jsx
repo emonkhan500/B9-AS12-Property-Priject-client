@@ -114,7 +114,7 @@ const handleMakeAgent =user=>{
 <h1 className='text-3xl font-medium'>MANAGE ALL USERS</h1>
 <hr className='h-4 mt-3 mb-4 w-60 mx-auto' />
 </div>
-<div className='mx-7 my-7 bg-[#FFF] '>
+<div className='mx-7 mt-7 bg-[#FFF] '>
 <div className="overflow-x-auto">
   <table className="table">
     {/* head */}
