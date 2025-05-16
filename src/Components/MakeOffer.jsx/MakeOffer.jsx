@@ -67,8 +67,8 @@ agentEmail,
       };
 
     return (
-        <div className="h-[100vh] mx-auto bg-orange-100 text-center ">
-      <h1 className="pt-20 text-3xl font-bold text-orange-500">
+        <div className=" mx-auto bg-gradient-to-r from-[#3B9DF8]/30 to-[#00C6FF]/30 text-center ">
+      <h1 className="pt-20 text-3xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text">
         Send Your Offer !!
       </h1>
 
@@ -175,7 +175,7 @@ agentEmail,
      
         <input
           type="submit"
-          className="col-span-2 my-5 min-w-full btn btn-outline border-orange-800 hover:border-orange-600 text-white bg-orange-600 hover:bg-orange-400 border-4"
+          className="col-span-2 my-5 py-2 min-w-full bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] px-3 rounded-lg  text-white text-xl "
           value="Offer"
         />
       </form>

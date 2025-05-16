@@ -23,15 +23,21 @@ const Wishlist = () => {
 
     return (
         <div>
-        <div className='bg-[#8ba80941] text-orange-500 text-center text-3xl font-bold pt-8 pb-8'>
+        <div className=' text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text text-center text-3xl font-bold pt-8 pb-8'>
        <h1>{properties?.agentName} Your Wished Property</h1>
    </div>
-       <div className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-10'>
+   {properties && properties.length >0 ?<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 mb-10'>
+       
           
-          {
-           properties.map(property=><ShowWishlist item={property}></ShowWishlist>)
-          }
-       </div>
+       {
+        properties.map(property=><ShowWishlist item={property}></ShowWishlist>)
+       }
+    </div> :(
+        <h1 className="text-4xl mt-2  py-3 border-t-2 text-center  text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text">
+        You Haven't Added Any Property To Your Wishlist
+      </h1>
+    )}
+       
       </div>
     );
 };

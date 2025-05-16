@@ -21,7 +21,7 @@ const Dashboard = () => {
    
     return (
         <div className="flex flex-col lg:flex-row min-h-screen ">
-        <div className="  w-auto lg:w-80 h-full lg:min-h-screen pt-10  lg:pt-20 border-e-2">
+        <div className="  w-auto lg:w-64 xl:w-80 h-full lg:min-h-screen pt-10  lg:pt-20 border-e-2">
           
           <ul className="menu space-y-2 mx-5">
             {isAdmin ? 
@@ -108,7 +108,7 @@ const Dashboard = () => {
         </div>
   
         <div className="flex-1 ">
-          <div className="text-center mt-6  lg:mt-14 text-2xl md:text-4xl lg:text-7xl text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text">
+          <div className="text-center mt-6 mb-10 lg:mb-16 lg:mt-14 text-2xl md:text-4xl  lg:text-5xl xl:text-7xl text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text">
           <h1>-Welcome to Dashboard-</h1>
           </div>
           <div>
