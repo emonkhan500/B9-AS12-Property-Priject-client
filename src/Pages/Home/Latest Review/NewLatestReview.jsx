@@ -22,10 +22,10 @@ const NewLatestReview = () => {
   return (
     <div className="pt-16 px-1 md:px-3 2xl:px-20">
       <div className="text-center mb-6 md:mb-14">
-        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text dark:text-white pb-3">
+        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  pb-3">
           Latest Review Given By Users
         </h3>
-        <p className=" text-gray-600 dark:text-white ">
+        <p className=" text-gray-600  ">
           Honest reviews, trusted experiences shared from our community.
         </p>
       </div>

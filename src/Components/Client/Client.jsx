@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import wait from '../../../public/wait.json';
 import Lottie from 'lottie-react';
 
-const Contact = () => {
+const Client = () => {
     return (
-        <div className=''>
-          <section className="flex items-center  min-h-screen  dark:bg-gray-50 dark:text-gray-800">
+        <div>
+           <section className="flex items-center  min-h-screen  dark:bg-gray-50 dark:text-gray-800">
 	<div className="container flex flex-col items-center justify-center px-5 mx-auto mb-8">
 		<div className="text-center">
 		<Lottie animationData={wait} className=" h-[280px] md:h-[300px] lg:h-[600px]" />
@@ -21,4 +21,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Client;

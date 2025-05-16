@@ -9,10 +9,10 @@ const Faq = () => {
         <p className="text-lg mb-2 text-gray-800">
           Your Frequently Ask Questions
         </p>
-        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text dark:text-white">
+        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text ">
           Everything You Need to Know
         </h3>
-        <p className="text-sm text-gray-600 dark:text-white mt-2">
+        <p className="text-sm text-gray-600  mt-2">
           We’re here to make things clear for you. Your concerns, clarified in
           one place.
         </p>

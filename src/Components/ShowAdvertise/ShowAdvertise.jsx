@@ -24,10 +24,10 @@ const ShowAdvertise = () => {
         className=' mt-16 rounded-lg'>
             
             <div className="text-center mb-6 md:mb-14">
-        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text dark:text-white pb-3">
+        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-[#3B9DF8] to-[#3BE8C4] bg-clip-text  pb-3">
         These Are Our Best Property Right Now !!
         </h3>
-        <p className=" text-gray-600 dark:text-white ">
+        <p className=" text-gray-600  ">
         Experience Luxury Living — Where Comfort Meets Prime Location
         </p>
       </div>

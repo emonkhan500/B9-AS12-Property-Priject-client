@@ -28,6 +28,8 @@ import Details from "./Components/Details/Details";
 import MakeOffer from "./Components/MakeOffer.jsx/MakeOffer";
 import Advertise from "./Components/AdminThing/Advertise";
 import Payment from "./Components/UserThing/Payment/Payment";
+import Contact from "./Components/Contact/Contact";
+import Client from "./Components/Client/Client";
 
 
  export const router = createBrowserRouter([
@@ -51,6 +53,14 @@ import Payment from "./Components/UserThing/Payment/Payment";
         {
             path:'/allproperty',
             element:<PrivateRoute><AllProperty></AllProperty></PrivateRoute>,
+        },
+        {
+            path:'/contact',
+            element:<PrivateRoute><Contact></Contact></PrivateRoute>,
+        },
+        {
+            path:'/client',
+            element:<PrivateRoute><Client></Client></PrivateRoute>,
         },
         {
             path:'/details/:id',
