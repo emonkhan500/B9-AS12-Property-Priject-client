@@ -28,22 +28,22 @@ const Signup = () => {
     // console.log(name, email, pass, photo);
     setRegisterError(' ')
 
-    if(pass.length<5){
- setRegisterError('Password must be more than Five character !!')
- return
-    }
-    else if(!/[A-Z]/.test(pass)){
-     setRegisterError('Password must have One Capital letter!!')
-     return
-    }
- else if(!/[a-z]/.test(pass)){
- setRegisterError('Password must have One Small letter!!')
- return
- }
- else if(!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(pass)){
- setRegisterError('Password must have One Special Character!!')
- return
- }
+//     if(pass.length<5){
+//  setRegisterError('Password must be more than Five character !!')
+//  return
+//     }
+//     else if(!/[A-Z]/.test(pass)){
+//      setRegisterError('Password must have One Capital letter!!')
+//      return
+//     }
+//  else if(!/[a-z]/.test(pass)){
+//  setRegisterError('Password must have One Small letter!!')
+//  return
+//  }
+//  else if(!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(pass)){
+//  setRegisterError('Password must have One Special Character!!')
+//  return
+//  }
 
 
     createUser(email, pass)
