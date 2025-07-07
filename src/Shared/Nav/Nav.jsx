@@ -68,7 +68,7 @@ const Nav = () => {
           ALL PROPERTIES
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/contact"
           className={({ isActive }) =>
             `p-2 rounded-md text-xl transition-colors duration-600 ${
@@ -79,8 +79,8 @@ const Nav = () => {
           }
         >
           Contact Us   
-        </NavLink>
-        <NavLink
+        </NavLink> */}
+        {/* <NavLink
           to="/client"
           className={({ isActive }) =>
             `p-2 rounded-md text-xl transition-colors duration-600 ${
@@ -91,7 +91,7 @@ const Nav = () => {
           }
         >
           Happy Clients
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           to="/dashboard"
