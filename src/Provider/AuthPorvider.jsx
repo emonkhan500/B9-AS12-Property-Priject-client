@@ -61,7 +61,7 @@ const unsubscribe= onAuthStateChanged(auth,(currentUser)=>{
 return ()=>{
     unsubscribe()
 }
-},[])
+},[axiosPublic])
 
 // sign In
 const login=(email,pass)=>{
