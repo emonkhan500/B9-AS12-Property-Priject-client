@@ -16,6 +16,8 @@ const Wishlist = () => {
             const res=await axiosSecure.get(`/wishlist/${user.email}`)
          return res.data
         }
+      
+        
         
     })
     // console.log(properties)
