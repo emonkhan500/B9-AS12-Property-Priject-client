@@ -1,18 +1,42 @@
-# Website Name: Property Zone
-# live link: https://property-zone.netlify.app/
+#  Property Zone
+
+Property Zone is a modern real estate web application where users can explore properties, add reviews, and purchase properties online. The platform includes role-based authentication with separate dashboards for Admin and Users, allowing efficient property management and secure transactions.
+
+##  Live Demo
+https://property-zone.netlify.app/
+
+---
+
+##  Features
+
+-  Authentication and role-based access system (Admin & User).
+-  Users can browse properties, add reviews, and manage their purchased properties from their dashboard.
+-  Admin dashboard to add properties, manage listings, control reviews, and manage property sales.
+-  Property management system where admins can add and control properties.
+-  Users can submit reviews on properties which can be monitored by the admin.
+-  Secure online payment integration using Stripe.
+-  Separate dashboards for Admin and Users for better management.
+-  Fully responsive design optimized for desktop, tablet, and mobile devices.
+
+---
+
+##  Technologies Used
+
+- React.js  
+- JavaScript  
+- Tailwind CSS  
+- Node.js  
+- Express.js  
+- MongoDB  
+- Firebase Authentication  
+- Stripe Payment Gateway  
+
+---
 
 
- 
-- This website is for property buy and sell.
-- This is full-stack website.
-- This website is managed by Admin and Agent.
-- An Admin can manage agent,user,property,user reviews and more...
-- This fully responsive for all device.
-- In this website we implement payment using stipe.
-- Buyer can payment using any card.
-- User can add any property to his Wishlist.
-- User can add review for any Property though modal.
-- Admin can advertise any property which will show on home page.
-- Agent can update a property which he added.
-- User can send offer to agent for user's wish Property
 
+## 👨‍💻 Author
+
+Md Emon Khan 
+MERN Stack Developer  
+React.js | Next.js | Node.js | MongoDB | Tailwind CSS
